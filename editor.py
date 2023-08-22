@@ -67,14 +67,14 @@ file=None
 
 window_width=500
 window_height=500
-screen_width=window.winfo_screenwidth()
+screen_width=window.winfo_screenwidth()#returns screen width
 screen_height=window.winfo_screenheight()
 
-
+#centering the file
 x=int((screen_width / 2)-(window_width / 2))
 y=int((screen_height / 2)-(window_height/2))
 
-window.geometry("{}x{}+{}+{}".format(window_width,window_height,x,y))
+
 
 font_name=StringVar(window)
 font_name.set("Arial")
